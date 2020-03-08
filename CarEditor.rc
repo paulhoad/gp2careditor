@@ -650,8 +650,6 @@ IDB_HELMETTOP           BITMAP                  "helmettop.bmp"
 
 IDB_GREY                BITMAP                  "res\\bmp00006.bmp"
 
-IDB_TEST1               BITMAP                  "res\\test1.bmp"
-
 IDB_HELMET              BITMAP                  "res\\bmp00007.bmp"
 
 IDB_POLYGON_DEF         BITMAP                  "res\\bmp00008.bmp"
