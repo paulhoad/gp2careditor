@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{E90C35D1-3679-4780-B183-5E52AB38D4CA}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\CarEditor.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\CarEditor.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0809</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\CarEditor.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\CarEditor.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\CarEditor.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\CarEditor.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0809</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\CarEditor.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\CarEditor.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\CarEditor.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\CarEditor.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0809</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\CarEditor.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\CarEditor.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\CarEditor.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\CarEditor.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0809</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\CarEditor.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\CarEditor.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationSpeed.cpp" />
+    <ClCompile Include="BMP.CPP" />
+    <ClCompile Include="CamEdit.cpp" />
+    <ClCompile Include="Car.cpp" />
+    <ClCompile Include="CarEditor.cpp" />
+    <ClCompile Include="CarEditorDoc.cpp" />
+    <ClCompile Include="CarEditorView.cpp" />
+    <ClCompile Include="CarTree.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="DataValue.cpp" />
+    <ClCompile Include="GPOObject.cpp" />
+    <ClCompile Include="Jam.cpp" />
+    <ClCompile Include="JamSelect.cpp" />
+    <ClCompile Include="JamView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="OpenGLView.cpp" />
+    <ClCompile Include="Point3DDataValue.cpp" />
+    <ClCompile Include="SIZECBAR.CPP" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TriggerDist.cpp" />
+    <ClCompile Include="VertexDataValue.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationSpeed.h" />
+    <ClInclude Include="BMP.H" />
+    <ClInclude Include="CamEdit.h" />
+    <ClInclude Include="Car.h" />
+    <ClInclude Include="CarEditor.h" />
+    <ClInclude Include="CarEditorDoc.h" />
+    <ClInclude Include="CarEditorView.h" />
+    <ClInclude Include="CarTree.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="DataValue.h" />
+    <ClInclude Include="Jam.h" />
+    <ClInclude Include="JamSelect.h" />
+    <ClInclude Include="jamview.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="OpenGLView.h" />
+    <ClInclude Include="Pallette.h" />
+    <ClInclude Include="Point3DDataValue.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RgbPal.h" />
+    <ClInclude Include="SIZECBAR.H" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TriggerDist.h" />
+    <ClInclude Include="VertexDataValue.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CarEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="colorscan.bmp" />
+    <Image Include="decal.bmp" />
+    <Image Include="helmetface.bmp" />
+    <Image Include="helmets.bmp" />
+    <Image Include="helmettop.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00004.bmp" />
+    <Image Include="res\bmp00005.bmp" />
+    <Image Include="res\bmp00006.bmp" />
+    <Image Include="res\bmp00007.bmp" />
+    <Image Include="res\bmp00008.bmp" />
+    <Image Include="res\bmp00009.bmp" />
+    <Image Include="res\bmp00010.bmp" />
+    <Image Include="res\bmp00011.bmp" />
+    <Image Include="res\bmp00012.bmp" />
+    <Image Include="res\CarEditor.ico" />
+    <Image Include="res\CarEditorDoc.ico" />
+    <Image Include="res\test1.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="shadow.bmp" />
+    <Image Include="trye.bmp" />
+    <Image Include="tryeface.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\CarEditor.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

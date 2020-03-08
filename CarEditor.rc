@@ -1,0 +1,875 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_CAREDITYPE          ICON                    "res\\CarEditorDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_SHOWTOOLBAR         BITMAP                  "res\\toolbar1.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 18, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_ZOOM_IN
+    BUTTON      ID_ZOOM_OUT
+    SEPARATOR
+    BUTTON      ID_SHOW_CAR
+    BUTTON      ID_SHOWTYRES
+    BUTTON      ID_HELMET
+    BUTTON      ID_SHOW_OBJECT
+    BUTTON      ID_SHOWCAMERAS
+    BUTTON      ID_CARONE
+    BUTTON      ID_CARTWO
+    SEPARATOR
+    BUTTON      ID_FILEIMPORT
+    BUTTON      ID_FILEEXPORT
+    BUTTON      ID_GP2_EXE
+END
+
+IDR_SHOWTOOLBAR TOOLBAR 18, 15
+BEGIN
+    BUTTON      ID_TEXTUREMAPS
+    BUTTON      ID_FILLOBJECTS
+    BUTTON      ID_SHOW_SINGLE_COLOR
+    BUTTON      ID_SHOW_POINTS
+    BUTTON      ID_SHOW_LINES
+    BUTTON      ID_DRAWAXIS
+    BUTTON      ID_SHOW_CULLING
+    BUTTON      ID_SHOW_NORMALS
+    BUTTON      ID_LIGHTING
+    SEPARATOR
+    BUTTON      ID_SHOW_POINTNUMBERS
+    BUTTON      ID_SHOW_VERTEX_NUMBERS
+    BUTTON      ID_SHOW_POLYGON_NUMBERS
+    BUTTON      ID_SHOW_CAMERA_NUMBERS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load Car...\tCtrl+O",        ID_FILE_OPEN
+        MENUITEM "Load Helmet",                 ID_FILE_IMPORTHELMET
+        MENUITEM "Import From Exe...",          ID_FILEIMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Edit GP2 Location...",        ID_EDIT_EDITGP2LOCATION
+        MENUITEM "Set RCR distance trigger",    ID_EDIT_DISTANCE_TRIGGER
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "JAM"
+    BEGIN
+        MENUITEM "Set Car Texture Jam",         ID_JAM_SET
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About CarEditor...",         ID_APP_ABOUT
+    END
+END
+
+IDR_CAREDITYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load Car...\tCtrl+O",        ID_FILE_OPEN
+        MENUITEM "Load Helmet",                 ID_FILE_IMPORTHELMET
+        MENUITEM "Import From Exe...",          ID_FILEIMPORT
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save Helmet",                 ID_SAVE_HELMET
+        MENUITEM "Export To Exe...",            ID_FILEEXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Import GPO Object",           ID_FILE_IMPORTGPOOBJECT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Edit GP2 Location...",        ID_EDIT_EDITGP2LOCATION
+        MENUITEM SEPARATOR
+        MENUITEM "Copy Car 1 to Car 2",         ID_COPY_CAR1_TO_CAR2
+        MENUITEM "Set RCR distance trigger",    ID_EDIT_DISTANCE_TRIGGER
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Hi Nose Car Shape",           ID_HIGH_NOSE
+        MENUITEM "Show Shadow Box",             ID_SHOW_SHADOW
+        MENUITEM "ShowTexture Mapping",         ID_TEXTUREMAPS
+        MENUITEM "Show Polygons",               ID_FILLOBJECTS
+        MENUITEM "Show Verticies",              ID_SHOW_LINES
+        MENUITEM "Show Points",                 ID_SHOW_POINTS
+        MENUITEM "BackFace Culling",            ID_SHOW_CULLING
+        MENUITEM SEPARATOR
+        MENUITEM "Show Vertex Numbers",         ID_SHOW_VERTEX_NUMBERS
+        MENUITEM "Show Point Numbers",          ID_SHOW_POINTNUMBERS
+        MENUITEM "Show Polygon Numbers",        ID_SHOW_POLYGON_NUMBERS
+        MENUITEM "Show Polygon Normals",        ID_SHOW_NORMALS
+        MENUITEM SEPARATOR
+        MENUITEM "Show Car",                    ID_SHOW_CAR
+        MENUITEM "Show Tyres",                  ID_SHOWTYRES
+        MENUITEM "Show Helmet",                 ID_HELMET
+        MENUITEM SEPARATOR
+        MENUITEM "Show RCR Jam Ids",            ID_SHOW_JAMNUMBERS
+        MENUITEM "Show Nose Cone Indicator",    ID_SHOW_NOSE_CONE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "JAM"
+    BEGIN
+        MENUITEM "Set Car Texture Jam",         ID_JAM_SET
+        MENUITEM "JAM View",                    ID_JAM_VIEW
+        MENUITEM "Use Internal Jams",           ID_INTERNAL_JAM
+        MENUITEM "Export RCR JAM",              ID_JAM_EXPORTRCRJAM
+        MENUITEM "Draw RCR Jam",                ID_JAM_DRAWRCRJAM
+        MENUITEM "Produce RCR Images",          ID_JAM_PRODUCERCRIMAGES
+    END
+    POPUP "Camera"
+    BEGIN
+        MENUITEM "Normal View",                 ID_NORMAL_VIEW
+        MENUITEM "View From Camera 1",          ID_CAMERA_VIEWFROMCAMERA1
+        MENUITEM "View From Camera 2",          ID_CAMERA_VIEWFROMCAMERA2
+        MENUITEM "View From Camera 3",          ID_CAMERA_VIEWFROMCAMERA3
+        MENUITEM "View From Camera 4",          ID_CAMERA_VIEWFROMCAMERA4
+        MENUITEM "View From Camera 5",          ID_CAMERA_VIEWFROMCAMERA5
+        MENUITEM "View From Camera 6",          ID_CAMERA_VIEWFROMCAMERA6
+        MENUITEM "View From Camera 7",          ID_CAMERA_VIEWFROMCAMERA7
+        MENUITEM "View From Camera 8",          ID_CAMERA_VIEWFROMCAMERA8
+        MENUITEM "View From Camera 9",          ID_CAMERA_VIEWFROMCAMERA9
+        MENUITEM SEPARATOR
+        MENUITEM "View Right Side",             ID_CAMERA_VIEWRIGHTSIDE
+        MENUITEM "View Left Side",              ID_CAMERA_VIEWLEFTSIDE
+        MENUITEM "View Front",                  ID_CAMERA_VIEWFRONT
+        MENUITEM "View Bottom",                 ID_CAMERA_VIEWBOTTOM
+        MENUITEM "View Top",                    ID_CAMERA_VIEWTOP
+        MENUITEM "View Back",                   ID_CAMERA_VIEWBACK
+        MENUITEM "View Front Left",             ID_CAMERA_VIEWFRONTLEFT
+        MENUITEM "View Front Right",            ID_CAMERA_VIEWFRONTRIGHT
+        MENUITEM "View Back Left",              ID_CAMERA_VIEWBACKLEFT
+        MENUITEM "View Back Right",             ID_CAMERA_VIEWBACKRIGHT
+    END
+    POPUP "Animate"
+    BEGIN
+        MENUITEM "Start/Stop Animation",        ID_START_ANIMATION
+        MENUITEM "Set Animation Delay",         ID_SET_ANIMATION_DELAY
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&About CarEditor...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 318, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CarEditor"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "CarEditor Version 0.99",IDC_STATIC,39,7,119,8,SS_NOPREFIX
+    LTEXT           "Copyright Paul Hoad © 1998-2020",IDC_STATIC,39,21,119,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,9,9,20,20
+    DEFPUSHBUTTON   "I Accept",IDOK,127,169,54,14,WS_GROUP
+    LTEXT           "CarEditor is a Shareware product. You are free to use CarEditor  on a trial basis only. If you like or intend to continue using the Car Editor  in any way then you are required to register your copy with the author: (See README)",IDC_STATIC,9,54,303,27
+    LTEXT           "You must NOT distribute this editor by any means other than via email or internet download without the authors prior agreement. You are not permitted to include this CarEditor  on any Media for distribution without the authors prior written consent.",IDC_STATIC,9,88,303,27
+    LTEXT           "The Author of CarEditor  is by no means responsible for any loss of data incurred by the use of this product or any infringement of copyright or licensing laws that using this product may break.",IDC_STATIC,9,121,305,20
+END
+
+IDD_DATAVAL DIALOG 0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Data Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,27,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,27,50,14
+    EDITTEXT        IDC_EDIT1,65,7,114,12,ES_AUTOHSCROLL
+    LTEXT           "New Value:",IDC_STATIC,7,7,52,12
+END
+
+IDD_CAMEDIT DIALOG 0, 0, 186, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "In Car Camera Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,64,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,64,50,14
+    EDITTEXT        IDC_EDIT1,47,7,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,104,7,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,152,7,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,47,25,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,104,25,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,153,25,27,14,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,33,7,8,8
+    LTEXT           "Y:",IDC_STATIC,92,7,8,8
+    LTEXT           "Z:",IDC_STATIC,139,7,8,8
+    LTEXT           "Direction:",IDC_STATIC,13,27,31,8
+    LTEXT           "Pitch:",IDC_STATIC,81,27,19,8
+    LTEXT           "Roll:",IDC_STATIC,133,26,15,8
+    EDITTEXT        IDC_EDIT7,47,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,139,42,40,14,ES_AUTOHSCROLL
+    LTEXT           "Detail1:",IDC_STATIC,13,44,25,8
+    LTEXT           "Detail2",IDC_STATIC,106,44,23,8
+END
+
+IDD_DIALOG3 DIALOG 0, 0, 186, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Animation Delay Speed"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,32,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,32,50,14
+    LTEXT           "Animation Frame Delay",IDC_STATIC,7,7,73,8
+    EDITTEXT        IDC_EDIT1,87,7,92,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,8,0,0
+ PRODUCTVERSION 0,8,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "A Paul Hoad Shareware Product"
+            VALUE "FileDescription", "Car Shape Editor for use with F1GP2"
+            VALUE "FileVersion", "0, 8, 0, 0"
+            VALUE "InternalName", "CarEditor"
+            VALUE "LegalCopyright", "Copyright © 1998"
+            VALUE "OriginalFilename", "CAREDITOR.EXE"
+            VALUE "ProductName", "CAREDITOR Application"
+            VALUE "ProductVersion", "0, 8, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_DATAVAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_CAMEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "CarEditor"
+    IDR_CAREDITYPE          "F1GP2 CarFiles\ncar\n\nF1GP2 Car Files (*.shp)\n.shp\nCarFileType\nF1GP2 Car Files Type"
+    IDR_CAREDITYPE_OLD      "F1GP2 CarFiles\ncar\n\n (OLD) F1GP2 Car Files (*.dat)\n.dat\nCarFileType\nF1GP2 Car Files Type"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "CarEditor"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_GP2_EXE              "Launch GP2\nRun GP2"
+    ID_FILEIMPORT           "Import Car From gp2.exe\n Import Car from Exe"
+    ID_FILEEXPORT           "Export Car to gp2.exe\nExport Car to Exe"
+    ID_FILLOBJECTS          "Fill Polygons\nFill Polygons"
+    ID_SHOW_POINTS          "Show Points\nShow Points"
+    ID_SHOWTYRES            "Show Tyres\nShow Tyres"
+    ID_HELMET               "Show Helmet\nShow Helmet"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CARONE               "Show Low Nose Car\nShow Low Nose Car"
+    ID_CARTWO               "Show High Nose Car\nHigh Nose Car"
+    ID_DRAWAXIS             "Draw Axis\nDraw Axis"
+    ID_SHOWCAMERAS          "Show InCar Cameras\nShow Cameras"
+    ID_TEXTUREMAPS          "Use Texture Maps\nTexture Maps"
+    ID_SHOW_LINES           "Show Verticies\nShow Verticies"
+    ID_SHOW_CULLING         "Backface Culling\nBackface Culling"
+    ID_SHOW_NORMALS         "Show Normals\nShow Normals"
+    ID_SHOW_SINGLE_COLOR    "Show Single Color\nShow Single Color"
+    ID_LIGHTING             "Lighting\nLighting"
+    ID_SHOW_CAR             "Show Car\nShow Car"
+    ID_SHOW_POINTNUMBERS    "Show Point Numbers\nShow Point Numbers"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SHOW_VERTEX_NUMBERS  "Show Vertex Numbers\nShow Vertex Numbers"
+    ID_BUTTON32801          "Show Camera Numbers\nShow Camera Numbers"
+    ID_SHOW_CAMERA_NUMBERS  "Show Camera Numbers\nCamera Numbers"
+    ID_SHOW_POLYGON_NUMBERS "Show Polygon Numbers\nShow Polygon Numbers"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ZOOM_IN              "Zoom In\nZoom In"
+    ID_ZOOM_OUT             "Zoom In\nZoom In"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CarEditor.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CAR                 BITMAP                  "res\\bitmap1.bmp"
+
+IDB_VERTICIES           BITMAP                  "res\\bmp00001.bmp"
+
+IDB_POINT               BITMAP                  "res\\bmp00002.bmp"
+
+IDB_POLYGONS            BITMAP                  "res\\bmp00003.bmp"
+
+IDB_SCALE               BITMAP                  "res\\bmp00004.bmp"
+
+IDB_CAMERA              BITMAP                  "res\\bmp00005.bmp"
+
+IDB_TEST                BITMAP                  "decal.bmp"
+
+IDB_TYRE                BITMAP                  "trye.bmp"
+
+IDB_TYREFACE            BITMAP                  "tryeface.bmp"
+
+IDB_HELMETFACE          BITMAP                  "helmetface.bmp"
+
+IDB_HELMETTOP           BITMAP                  "helmettop.bmp"
+
+IDB_GREY                BITMAP                  "res\\bmp00006.bmp"
+
+IDB_TEST1               BITMAP                  "res\\test1.bmp"
+
+IDB_HELMET              BITMAP                  "res\\bmp00007.bmp"
+
+IDB_POLYGON_DEF         BITMAP                  "res\\bmp00008.bmp"
+
+IDB_NO_DEF              BITMAP                  "res\\bmp00009.bmp"
+
+IDB_HELMETS             BITMAP                  "helmets.bmp"
+
+IDB_SHADOW              BITMAP                  "shadow.bmp"
+
+IDB_OFFSET              BITMAP                  "res\\bmp00010.bmp"
+
+IDB_UNK                 BITMAP                  "res\\bmp00011.bmp"
+
+IDB_JAM                 BITMAP                  "res\\bmp00012.bmp"
+
+IDB_COLORSCAN           BITMAP                  "colorscan.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VERTEXVALUE DIALOG 0, 0, 169, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vertex Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,52,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,52,50,14
+    EDITTEXT        IDC_EDIT1,68,7,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,67,24,46,14,ES_AUTOHSCROLL
+    LTEXT           "From:",IDC_STATIC,7,7,50,13
+    LTEXT           "To:",IDC_STATIC,7,24,52,13
+END
+
+IDD_DIALOG1 DIALOG 0, 0, 247, 133
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Point Values Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,112,50,14
+    EDITTEXT        IDC_EDIT1,22,17,26,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,111,18,26,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,194,18,26,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,22,49,24,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,111,49,27,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "XCode",IDC_STATIC,22,36,22,8
+    LTEXT           "YCode",IDC_STATIC,111,36,26,13
+    LTEXT           "Unk",IDC_XSCALE,47,67,42,8
+    LTEXT           "Unk",IDC_YSCALE,142,68,37,10
+    LTEXT           "Scale",IDC_STATIC,49,36,19,8
+    LTEXT           "Scale",IDC_STATIC,143,36,19,8
+    GROUPBOX        "Y:",IDC_STATIC,98,7,86,76
+    GROUPBOX        "X:",IDC_STATIC,7,7,86,76
+    GROUPBOX        "Z:",IDC_STATIC,187,7,53,76
+    LTEXT           "Can be set to anything",IDC_STATIC,191,42,42,36
+    LTEXT           "Must be set to scale value or to reference another points XY data by using index + 0x8000",IDC_STATIC,7,86,176,21
+    CONTROL         "-ve",IDC_Y_SIGN,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,111,67,26,10
+    CONTROL         "-ve",IDC_X_SIGN,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,17,67,26,10
+    COMBOBOX        IDC_COMBO3,50,49,39,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,143,50,39,60,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_JAMSELECTOR DIALOG 0, 0, 186, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Button1",IDC_JAMPREVIEW,"Button",BS_OWNERDRAW | BS_ICON | BS_FLAT | WS_TABSTOP,7,49,172,108
+    COMBOBOX        IDC_JAMFILE,49,7,130,14,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Jam File:",IDC_STATIC,7,7,39,10
+    COMBOBOX        IDC_DRIVER,49,25,130,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Driver:",IDC_STATIC,7,24,34,13
+END
+
+IDD_SELECTJAM DIALOG 0, 0, 186, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Car Texture Jam"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,32,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,32,50,14
+    COMBOBOX        IDC_JAMNAME,57,7,122,81,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Car Jam:",IDC_STATIC,7,7,28,8
+END
+
+IDD_TRIGGERDISTANCE DIALOG 0, 0, 238, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Distance to RCR image trigger"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,121,50,14
+    EDITTEXT        IDC_EDIT1,136,79,95,15,ES_AUTOHSCROLL
+    LTEXT           "Distance to trigger:",IDC_STATIC,7,79,60,8
+    GROUPBOX        "Trigger Distance",IDC_STATIC,7,7,224,62
+    LTEXT           "Adjusting this value affects the point at which the rcr jams are used by gp2. If the first time you use this function on your copy of gp2 you find this value is not 3200 then it could be you have an incompatible version.",IDC_STATIC,13,19,211,45
+    PUSHBUTTON      "Default",IDC_DEFAULT_VAL,7,98,50,14
+    PUSHBUTTON      "RCR jams only",IDC_RCRONLY,76,98,50,14
+    PUSHBUTTON      "Car Shape Editor Default.",IDC_SHAPEDEFAULT,145,98,85,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VERTEXVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_JAMSELECTOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_SELECTJAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_TRIGGERDISTANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\CarEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\CarEditor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
