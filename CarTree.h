@@ -7,7 +7,7 @@
 /////////////////////////////////////////////////////////////////////////////
 // CCarTree window
 
-#define TO_ID(x) (x-IDB_CAR)
+#define TO_ID(x) (x - IDB_CAR)
 
 class Car;
 class Helmet;
@@ -15,50 +15,59 @@ class GPOObject;
 
 class CCarTree : public CSizingControlBar
 {
-// Construction
-public:
-	CCarTree();
+  // Construction
+ public:
+  CCarTree();
 
-	HTREEITEM insertInfoNode(HTREEITEM parent, LPSTR title,int bitmap);
+  HTREEITEM
+  insertInfoNode(HTREEITEM parent, LPSTR title, int bitmap);
 
-	void InsertGPOObject(CDocument *doc,GPOObject *object);
+  void
+  InsertGPOObject(CDocument *doc, GPOObject *object);
 
-// Attributes
-public:
+  // Attributes
+ public:
+  // Operations
+ public:
+  // Overrides
+  // ClassWizard generated virtual function overrides
+  //{{AFX_VIRTUAL(CCarTree)
+  //}}AFX_VIRTUAL
 
-// Operations
-public:
+  CTreeCtrl m_CarTree;
 
-// Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CCarTree)
-	//}}AFX_VIRTUAL
+  // Implementation
+ public:
+  virtual ~CCarTree();
 
-	CTreeCtrl m_CarTree;
+  void
+  loadTree();
+  void
+  Reposition(CRect rc);
+  void
+  LoadImages();
 
-// Implementation
-public:
-	virtual ~CCarTree();
+  CImageList *pImageList;
 
-	void loadTree();
-	void Reposition(CRect rc);
-	void LoadImages();
+  void
+  InsertCar(CDocument *pDoc, Car *car);
+  void
+  InsertHelmet(CDocument *pDoc, Helmet *helmet);
 
-	CImageList* pImageList;
+  void
+  OnDblclkCartree(NMHDR *pNMHDR, LRESULT *pResult);
+  void
+  OnclkCartree(NMHDR *pNMHDR, LRESULT *pResult);
 
-	void InsertCar(CDocument *pDoc,Car *car);
-	void InsertHelmet(CDocument *pDoc,Helmet *helmet);
-
-	void OnDblclkCartree(NMHDR* pNMHDR, LRESULT* pResult);
-	void OnclkCartree(NMHDR* pNMHDR, LRESULT* pResult);
-
-	// Generated message map functions
-protected:
-	//{{AFX_MSG(CCarTree)
-	afx_msg void OnSize(UINT nType, int cx, int cy);
-	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+  // Generated message map functions
+ protected:
+  //{{AFX_MSG(CCarTree)
+  afx_msg void
+  OnSize(UINT nType, int cx, int cy);
+  afx_msg int
+  OnCreate(LPCREATESTRUCT lpCreateStruct);
+  //}}AFX_MSG
+  DECLARE_MESSAGE_MAP()
 };
 
 /////////////////////////////////////////////////////////////////////////////

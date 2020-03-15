@@ -1,0 +1,11 @@
+BasedOnStyle: Google
+AlwaysBreakAfterReturnType : All
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterEnum: true
+  AfterStruct: true
+  SplitEmptyFunction: false
+  AfterFunction: true
+  AfterClass: true
+  BeforeElse: true
+SortIncludes: false

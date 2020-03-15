@@ -8,8 +8,8 @@
 ** Bitmap class.
 */
 
-#ifndef   bmp_h
-#define   bmp_h
+#ifndef bmp_h
+#define bmp_h
 
 /*---------------------------------------------------------------------------
 ** Includes
@@ -20,9 +20,9 @@
 */
 
 /* constants for the biCompression field */
-#define BI_RGB      		0L
-#define BI_RLE8     		1L
-#define BI_RLE4     		2L
+#define BI_RGB 0L
+#define BI_RLE8 1L
+#define BI_RLE4 2L
 
 /*---------------------------------------------------------------------------
 ** Typedefs
@@ -56,35 +56,61 @@ typedef struct tagBITMAPINFOHEADER
 } BITMAPINFOHEADER;
 */
 
-class BMP {
-public:
-	BMP();
-	~BMP();
+class BMP
+{
+ public:
+  BMP();
+  ~BMP();
 
-	BOOL		Load(const char *filename);
-	BOOL		Create(unsigned short width, unsigned short height, unsigned char *pImage = NULL);
-	BOOL		Save(const char *filename);
-	void		SetPalette(RGBQUAD *pPalette);
+  BOOL
+  Load(const char *filename);
+  BOOL
+  Create(unsigned short width, unsigned short height,
+         unsigned char *pImage = NULL);
+  BOOL
+  Save(const char *filename);
+  void
+  SetPalette(RGBQUAD *pPalette);
 
-	void        CreateDIB(CBitmap &bitmap);
+  void
+  CreateDIB(CBitmap &bitmap);
 
-	BOOL		IsBmp();
-	BOOL		IsBmpVariantOk();
+  BOOL
+  IsBmp();
+  BOOL
+  IsBmpVariantOk();
 
-	long		ImageWidth()			const { return bmInfo.bmiHeader.biWidth; }
-	long		ImageHeight()			const { return bmInfo.bmiHeader.biHeight; }
+  long
+  ImageWidth() const
+  {
+    return bmInfo.bmiHeader.biWidth;
+  }
+  long
+  ImageHeight() const
+  {
+    return bmInfo.bmiHeader.biHeight;
+  }
 
-	unsigned char	*Image()				const { return m_pImage; }
-	RGBQUAD	*Palette()			{ return m_Palette; }
-	void		InvertImage();
+  unsigned char *
+  Image() const
+  {
+    return m_pImage;
+  }
+  RGBQUAD *
+  Palette()
+  {
+    return m_Palette;
+  }
+  void
+  InvertImage();
 
-private:
-	BITMAPFILEHEADER	m_Hdr;
-	BITMAPINFO          bmInfo;
-	//BITMAPINFOHEADER	m_InfoHdr;
-	RGBQUAD			m_Palette[256];
-	unsigned char			*m_pImage;
-	unsigned long			m_BmpImageSize;
+ private:
+  BITMAPFILEHEADER m_Hdr;
+  BITMAPINFO bmInfo;
+  // BITMAPINFOHEADER	m_InfoHdr;
+  RGBQUAD m_Palette[256];
+  unsigned char *m_pImage;
+  unsigned long m_BmpImageSize;
 };
 
 /*---------------------------------------------------------------------------
@@ -95,8 +121,7 @@ private:
 ** Functions
 */
 
-
-#endif    /* bmp_h */
+#endif /* bmp_h */
 /*---------------------------------------------------------------------------
 ** End of File
 */

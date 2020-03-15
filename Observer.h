@@ -4,53 +4,71 @@
 class Object3D;
 class CCarTree;
 
-enum t_Observer { t_Point, t_Vertex, t_Polygon, t_Camera, t_DataVal, t_TextureCmd,t_Scale ,t_JamFile};
-enum t_ParentType { t_Car, t_Helmet };
-
-class Observer: public CObject
+enum t_Observer
 {
-   public:
-	 t_Observer type;
-	 t_ParentType parent;
-	 Observer(t_Observer type):
-	 type(type)
-	 {
-		 changed=FALSE;
-		 object = NULL;
-		 type = type;
-	 }
+  t_Point,
+  t_Vertex,
+  t_Polygon,
+  t_Camera,
+  t_DataVal,
+  t_TextureCmd,
+  t_Scale,
+  t_JamFile
+};
+enum t_ParentType
+{
+  t_Car,
+  t_Helmet
+};
 
-	 virtual ~Observer()
-	 {}
+class Observer : public CObject
+{
+ public:
+  t_Observer type;
+  t_ParentType parent;
+  Observer(t_Observer type) : type(type)
+  {
+    changed = FALSE;
+    object = NULL;
+    type = type;
+  }
 
-	 virtual void Open(CCarTree *tree);
+  virtual ~Observer() {}
 
-	 virtual void Select(CCarTree *tree);
+  virtual void
+  Open(CCarTree *tree);
 
-	 Object3D * getObject()
-	 {
-		 return object;
-	 }
+  virtual void
+  Select(CCarTree *tree);
 
-	 void setChanged()
-	 {
-		 changed = TRUE;
-	 }
+  Object3D *
+  getObject()
+  {
+    return object;
+  }
 
-	 BOOL isChanged()
-	 {
-		 return changed;
-	 }
+  void
+  setChanged()
+  {
+    changed = TRUE;
+  }
 
-	 Object3D *object;
-	 CDocument *pDoc;
+  BOOL
+  isChanged()
+  {
+    return changed;
+  }
 
-	 CDocument *getDocument()
-	 {
-		 return pDoc;
-	 }
+  Object3D *object;
+  CDocument *pDoc;
 
-	 BOOL changed;
+  CDocument *
+  getDocument()
+  {
+    return pDoc;
+  }
+
+  BOOL changed;
 };
 
 #endif

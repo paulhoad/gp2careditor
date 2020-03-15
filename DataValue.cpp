@@ -14,29 +14,27 @@ static char THIS_FILE[] = __FILE__;
 /////////////////////////////////////////////////////////////////////////////
 // CDataValue dialog
 
-
 CDataValue::CDataValue(CWnd* pParent /*=NULL*/)
-	: CDialog(CDataValue::IDD, pParent)
+    : CDialog(CDataValue::IDD, pParent)
 {
-	//{{AFX_DATA_INIT(CDataValue)
-	m_DataVal = 0;
-	//}}AFX_DATA_INIT
+  //{{AFX_DATA_INIT(CDataValue)
+  m_DataVal = 0;
+  //}}AFX_DATA_INIT
 }
 
-
-void CDataValue::DoDataExchange(CDataExchange* pDX)
+void
+CDataValue::DoDataExchange(CDataExchange* pDX)
 {
-	CDialog::DoDataExchange(pDX);
-	//{{AFX_DATA_MAP(CDataValue)
-	DDX_Text(pDX, IDC_EDIT1, m_DataVal);
-	//}}AFX_DATA_MAP
+  CDialog::DoDataExchange(pDX);
+  //{{AFX_DATA_MAP(CDataValue)
+  DDX_Text(pDX, IDC_EDIT1, m_DataVal);
+  //}}AFX_DATA_MAP
 }
-
 
 BEGIN_MESSAGE_MAP(CDataValue, CDialog)
-	//{{AFX_MSG_MAP(CDataValue)
-		// NOTE: the ClassWizard will add message map macros here
-	//}}AFX_MSG_MAP
+//{{AFX_MSG_MAP(CDataValue)
+// NOTE: the ClassWizard will add message map macros here
+//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
